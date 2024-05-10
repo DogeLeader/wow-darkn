@@ -1,0 +1,140 @@
+
+html, body
+  margin: 0
+  font-family: "Inter", "SF Pro Display", "SF Hello", "SF Pro", "sans-serif", "Arial"
+  color: #fff
+  background-color: #222222
+  background-attachment: fixed
+  background-size: cover
+  background-image: url("/img/gradient.webp")
+
+a[href]
+  color: rgba(0,0,0,0.0)
+
+.ok 
+ overflow-y: hidden
+
+/* some css in .alt & .alt-main is from kxtz
+
+.alt
+  display: flex
+  overflow: hidden
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+
+.alt-main
+  background-color: rgba(11, 11, 11, 0.5)
+  max-width: 300px
+  padding: 20px
+  border-radius: 60px
+  border: 3px solid #fff
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.75)
+  text-align: center
+
+/* thank you kxtz ^^
+
+.pfp
+  width: auto
+  height: 150px
+  margin-bottom: -20px
+  border-radius: 50%
+  border: 2px solid #fff
+
+.mobile-header-height, .mobile-header-height-404
+  letter-spacing: -2.4px
+  margin-bottom: -7px
+  margin-top: 19px
+  font-kerning: none
+  font-size: 33px
+
+.header-height, .header-height-404
+  letter-spacing: -0.5px
+  margin-bottom: -1px
+
+.text-height, .text-height-404
+  margin-top: 10px
+  line-height: 1.2
+
+/* fade in experimentation start
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@mixin fadeIn($time: 0s)
+  animation: fadeIn $time
+  animation-fill-mode: forwards
+
+@mixin delay($delay: 0s)
+  animation-delay: $delay
+
+.alert
+  @include fadeIn(2s)
+  
+.alt-main
+  @include fadeIn(2s)
+
+.icons-a, .icons-b, .icons-c, .icons-d, .icons-e
+  opacity: 0
+  @include fadeIn(1.5s)
+
+.pfp, .header-height, .text-height, .mobile-header-height, .text-height-404, .header-height-404, .mobile-header-height-404
+  opacity: 0
+  @include fadeIn(1.2s)
+  
+.pfp, .header-height-404, .mobile-header-height-404
+  @include delay(1s)
+
+.header-height, .mobile-header-height, .text-height-404
+  @include delay(1.35s)
+
+.text-height
+  @include delay(1.70s)
+
+@mixin icon-style($animation-delay)
+  margin-left: 5.5px
+  margin-right: 5.5px
+  width: 25px
+  height: auto
+  animation-delay: $animation-delay
+
+$icons: a b c d e
+
+@each $icon in $icons
+ .icons-#{$icon}
+  @include icon-style(2.05s + 0.225s * index($icons, $icon))
+
+/* fade in experimentation end
+
+.icon-js
+  margin-left: 5.5px
+  margin-right: 5.5px
+  width: 25px
+  height: auto
+  transition: opacity 0.5s
+
+.icon-js:hover
+  opacity: 0.35
+
+/* source: https://community.codenewbie.org/alvaro_montoro/creating-a-snowfall-effect-with-html-and-css-2p4
+
+@keyframes snowfall
+  0%
+    transform: translateY(-10vh)
+
+  100%
+    transform: translateY(130vh)
+
+.snowflake
+  background: white
+  border-radius: 50%
+  position: fixed
+  top: -5vh
+  animation: snowfall infinite
+  opacity: 0.1
+
+/* thanks to hell0u/waveeeeee for making changes and fixes to the css code! <3
