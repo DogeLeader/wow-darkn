@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/cloudflare':
-        specifier: ^10.2.5
-        version: 10.2.5(astro@4.7.1(@types/node@20.12.7)(sass@1.77.0)(typescript@5.4.5))
+        specifier: ^10.2.6
+        version: 10.2.6(astro@4.7.1(@types/node@20.12.7)(sass@1.77.0)(typescript@5.4.5))
       '@astrojs/partytown':
         specifier: ^2.1.0
         version: 2.1.0
@@ -76,8 +76,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@astrojs/cloudflare@10.2.5':
-    resolution: {integrity: sha512-5tKPU5m/zYwz2CU9vCSKo4tgWsdD7xwpUlDkVbKPwgSkfVB6ZuXb8ffLYnahtUc1Gvh7HgaBSaagPVHGCp73WQ==}
+  '@astrojs/cloudflare@10.2.6':
+    resolution: {integrity: sha512-pgAT9+D866T/ER/L1+t2HvTtJzWhnZF7h7g2ur2ssv3AriJsXrS+Pny6ZTLYY11tuCx7GNxjY4H0jz1AOxuLig==}
     peerDependencies:
       astro: ^4.2.0
 
@@ -3005,7 +3005,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astrojs/cloudflare@10.2.5(astro@4.7.1(@types/node@20.12.7)(sass@1.77.0)(typescript@5.4.5))':
+  '@astrojs/cloudflare@10.2.6(astro@4.7.1(@types/node@20.12.7)(sass@1.77.0)(typescript@5.4.5))':
     dependencies:
       '@astrojs/internal-helpers': 0.3.0
       '@astrojs/underscore-redirects': 0.3.3
@@ -5340,7 +5340,7 @@ snapshots:
       workerd: 1.20240419.0
       ws: 8.17.0
       youch: 3.3.3
-      zod: 3.23.4
+      zod: 3.23.6
     transitivePeerDependencies:
       - bufferutil
       - supports-color
